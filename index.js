@@ -6,11 +6,18 @@ const config  = require('./webpack.config');
 const path    = require('path');
 const webpack = require('webpack');
 const compiler = webpack(config);
+const https = require('https');
+const http = require('http');
 const port = process.env.PORT || 3000;
 const mongoose = require('mongoose');
 var   bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var _ = require('lodash');
+
+var options = {
+  key: fs.readFileSync('./certs/key.pem'),
+  cert: fs.readFileSync('./certs/cert.pem')
+};
 
 const app = express();
 
@@ -71,4 +78,5 @@ mongoose.connection.once('open', function () {
   console.log('Listening on port ' + port);
 
 });
-app.listen(port);
+http.createServer(app).listen(port);
+https.createServer(options, app).listen(port);
