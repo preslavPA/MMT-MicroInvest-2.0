@@ -58,8 +58,9 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 
 //Connect to MongoDB
 
+var db = "mongodb://<preslavpa>:<mongolab1234/>@ds163701.mlab.com:63701/mmtmongodb";
 
-mongoose.connect('mongodb://localhost/db');
+//mongoose.connect('mongodb://localhost/db');
 mongoose.connection.on('error', console.error.bind(console, 'connection error:'));
 
 
