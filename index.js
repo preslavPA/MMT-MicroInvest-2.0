@@ -80,5 +80,15 @@ mongoose.connection.once('open', function () {
   console.log('Listening on port ' + port);
 
 });
+
+console.log('Loading models from [/models]...');
+app.models = require('./server-dev/models/index');
+console.log('models loaded');
+//Load routes
+console.log('Loading routes from [/routes]');
+var routes = require('./server-dev/routes');
+_.each(routes, function (controller, route) {
+  app.use(route, controller(app, route));
+});
 //http.createServer(app).listen(port);
 https.createServer(options, app).listen(port);
