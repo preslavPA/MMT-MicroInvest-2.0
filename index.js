@@ -61,25 +61,25 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 var db = "mongodb://<preslavpa>:<mongolab1234/>@ds163701.mlab.com:63701/mmtmongodb";
 
 //mongoose.connect('mongodb://localhost/db');
-mongoose.connection.on('error', console.error.bind(console, 'connection error:'));
-
-
-mongoose.connection.once('open', function () {
-
-  //Load models
-  console.log('Loading models from [/models]...');
-  app.models = require('./server-dev/models/index');
-  console.log('models loaded');
-  //Load routes
-  console.log('Loading routes from [/routes]');
-  var routes = require('./server-dev/routes');
-  _.each(routes, function (controller, route) {
-    app.use(route, controller(app, route));
-  });
-
-  console.log('Listening on port ' + port);
-
-});
+// mongoose.connection.on('error', console.error.bind(console, 'connection error:'));
+//
+//
+// mongoose.connection.once('open', function () {
+//
+//   //Load models
+//   console.log('Loading models from [/models]...');
+//   app.models = require('./server-dev/models/index');
+//   console.log('models loaded');
+//   //Load routes
+//   console.log('Loading routes from [/routes]');
+//   var routes = require('./server-dev/routes');
+//   _.each(routes, function (controller, route) {
+//     app.use(route, controller(app, route));
+//   });
+//
+//   console.log('Listening on port ' + port);
+//
+// });
 
 console.log('Loading models from [/models]...');
 app.models = require('./server-dev/models/index');
