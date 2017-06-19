@@ -6,6 +6,7 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as UsersActions from '../actions/users/usersActions';
 import * as ActionTypes from '../constants/users/UsersActionsTypes';
+var _ = require('lodash');
 
 class GetAllUsers extends Component {
 
@@ -48,8 +49,9 @@ class GetAllUsers extends Component {
     }
 
     let usersRows = [];
-    if (allUsers) {
-      usersRows = allUsers.map((user) => {
+    if (!_.isEmpty(allUsers)) {
+      console.log('allUsers', allUsers);
+      usersRows = allUsers.users.map((user) => {
         console.log('user: ', user);
         return (
           <tr key={user.id}>

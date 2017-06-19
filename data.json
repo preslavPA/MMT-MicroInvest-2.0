@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "details": {
+        "name": "preslav",
+        "email": "sofia@test.com",
+        "address": "sofia",
+        "country": "bg",
+        "company": "sofia",
+        "phone": "0887554433"
+      }
+    },
+    {
+      "id": 2,
+      "details": {
+        "name": "preslav2",
+        "email": "sofia@test.com",
+        "address": "sofia",
+        "country": "bg",
+        "company": "sofia",
+        "phone": "0887554433"
+      }
+    },
+    {
+      "id": 3,
+      "details": {
+        "name": "preslav3",
+        "email": "sofia@test.com",
+        "address": "sofia",
+        "country": "bg",
+        "company": "sofia",
+        "phone": "0887554433"
+      }
+    },
+    {
+      "id": 4,
+      "details": {
+        "name": "preslav4",
+        "email": "sofia@test.com",
+        "address": "sofia",
+        "country": "bg",
+        "company": "sofia",
+        "phone": "0887554433"
+      }
+    }
+  ]
+}

@@ -4,13 +4,12 @@ import fetch from "isomorphic-fetch";
 import UserSchema from '../../../../server-dev/models/UserSchema';
 var mongoose = require('mongoose');
 
-const targetUrl = "https://localhost:5000/getUsers";
+const targetUrl = "http://localhost:3000/getUsers";
 
 var myHeaders = new Headers();
 myHeaders.append('Content-Type', 'application/json', );
 
 export const submitUserForm = (state) => {
-  console.log('submitting form', state);
   fetch(targetUrl, {
     method: 'POST',
     mode : 'cors',
