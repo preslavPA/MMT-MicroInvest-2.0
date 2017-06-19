@@ -4,7 +4,6 @@
     <list default="true" id="f362c952-9e31-4182-9193-ff43d2af02cd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/js/actions/users/usersActions.js" afterPath="$PROJECT_DIR$/dev/js/actions/users/usersActions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
     </list>
     <ignored path="MicroInvest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -156,8 +155,8 @@
         <option value="$PROJECT_DIR$/dev/js/components/getAllUsers.js" />
         <option value="$PROJECT_DIR$/server-dev/controllers/UserController.js" />
         <option value="$PROJECT_DIR$/data.json" />
-        <option value="$PROJECT_DIR$/dev/js/actions/users/usersActions.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/dev/js/actions/users/usersActions.js" />
       </list>
     </option>
   </component>
@@ -414,12 +413,12 @@
       <workItem from="1496918168972" duration="16485000" />
       <workItem from="1496993821950" duration="721000" />
       <workItem from="1497611966310" duration="9855000" />
-      <workItem from="1497864021585" duration="9680000" />
+      <workItem from="1497864021585" duration="9834000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36741000" />
+    <option name="totallyTimeSpent" value="36895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
