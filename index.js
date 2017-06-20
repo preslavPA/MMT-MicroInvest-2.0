@@ -89,6 +89,6 @@ _.each(routes, function (controller, route) {
   app.use(route, controller(app, route));
 });
 //http.createServer(app).listen(port);
-//https.createServer(options, app).listen(port);
+https.createServer(options, app).listen(port);
 
-app.listen(port);
+//app.listen(port);
