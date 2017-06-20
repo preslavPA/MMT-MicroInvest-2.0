@@ -4,7 +4,7 @@ import fetch from "isomorphic-fetch";
 import UserSchema from '../../../../server-dev/models/UserSchema';
 var mongoose = require('mongoose');
 
-const targetUrl = "http://localhost:80/getUsers";
+const targetUrl = "/getUsers";
 
 var myHeaders = new Headers();
 myHeaders.append('Content-Type', 'application/json', );
