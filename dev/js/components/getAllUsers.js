@@ -39,7 +39,6 @@ class GetAllUsers extends Component {
       visibleTab
     } = this.props;
 
-
     if (eventType == ActionTypes.SWITCH_SECTION) {
       if (visibleTab == 'showAllUsers') {
         this.state.containerClass = 'col-xs-12 show'
@@ -72,6 +71,7 @@ class GetAllUsers extends Component {
     }
 
     return (
+
       <div className="col-xs-12">
 
         <div className="form-group">
